@@ -23,7 +23,7 @@ jobs:
         name: Snyk SCA Scan
         uses: cloudbees-io/snyk-sca-plugin-private@v1
         with:
-          snyk-token: ${{ secrets.SNYK_TOKEN }}
+          snyk-token: ${{ secrets.SNYK_SECRET }}
           org-id: ${{ vars.SNYK_ORG_NAME }}
           ref: test-snyk-sca
   job2:
