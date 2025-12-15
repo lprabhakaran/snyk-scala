@@ -21,7 +21,7 @@ jobs:
        
       - id: snyk-sca-step
         name: Snyk SCA Scan
-        uses: cloudbees-io/snyk-sca-plugin@v2
+        uses: cloudbees-io/snyk-sca-plugin@v1
         with:
           snyk-token: ${{ secrets.SNYK_SECRET }}
           org-id: ${{ vars.SNYK_ORG_NAME }}
